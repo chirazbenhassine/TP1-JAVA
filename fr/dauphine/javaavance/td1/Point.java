@@ -22,7 +22,7 @@ public class Point {
 	public void setY(int y) {
 		this.y = y;
 	}
-	//constructeur par défaut
+	//constructeur par dÃ©faut
 	public Point() {
 	}
 	//Qst5 et 6
@@ -35,7 +35,7 @@ public class Point {
 		this.x = x;
 	}
 	//Exercice3
-	//Qst2
+	//SVP corrigez votre code par rapport notre echange aujourd'hui
 	private boolean isSameAs(Point obj) {
 		 return (obj instanceof Point) && 
 				  ((Point)obj).getX()==(this.x) && 
