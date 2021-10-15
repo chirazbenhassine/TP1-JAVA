@@ -45,7 +45,7 @@ public class Point {
 	//Exercice5
 	public void translate(int dx, int dy) {
 		this.x=this.x+dx;
-		this.y=this.y+dy;
+		this.y =this.y+dy;
 		}
 	public static void main(String[] args) {
 		
