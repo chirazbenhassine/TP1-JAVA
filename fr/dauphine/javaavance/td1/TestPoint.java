@@ -14,7 +14,10 @@ public class TestPoint {
 		Point p2=new Point(5);
 		System.out.println("("+p2.getX()+","+p2.getY()+")"); 
 		
-		
+		//Exercice 5
+		Circle C =new Circle(new Point(1,2), 1);
+		C.translate(1, 1);
+		System.out.println(C);
 
 	}
 

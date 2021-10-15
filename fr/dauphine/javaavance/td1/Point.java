@@ -22,7 +22,7 @@ public class Point {
 	public void setY(int y) {
 		this.y = y;
 	}
-	//constructeur par défaut
+	//constructeur par defaut
 	public Point() {
 	}
 	//Qst5 et 6
@@ -36,11 +36,17 @@ public class Point {
 	}
 	//Exercice3
 	//Qst2
-	private boolean isSameAs(Point obj) {
-		 return (obj instanceof Point) && 
-				  ((Point)obj).getX()==(this.x) && 
-				  ((Point)obj).getY()==(this.y);
-	}
+	public boolean isSameAs(Point p) {
+		if ((this.x==p.x)&&(this.y==p.y)) {
+			return true;
+		}
+		return false; }
+	
+	//Exercice5
+	public void translate(int dx, int dy) {
+		this.x=this.x+dx;
+		this.y=this.y+dy;
+		}
 	public static void main(String[] args) {
 		
 		 Point p1=new Point(1,2);
@@ -59,11 +65,8 @@ public class Point {
 		 System.out.println(list.indexOf(p2));
 		 System.out.println(list.indexOf(p3));
 		 System.out.println(list.indexOf(p1));
-	}
-	
-	
-	
-	}
+		 }
+}
 	
 	
 	
